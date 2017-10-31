@@ -1,0 +1,64 @@
+IF EXISTS (SELECT *
+           FROM [dbo].[sysobjects]
+           WHERE [id] = OBJECT_ID(N'Warehouse.StockItemTransactions_XPath')
+           AND OBJECTPROPERTY([id],N'IsProcedure') = 1)
+   DROP PROCEDURE [Warehouse].[StockItemTransactions_Select];
+   GO
+/*  -- ====================================================================================
+    -- StockItemTransactions CRUD Stored Procedures ([Warehouse].[StockItemTransactions_XPath])
+    -- Generated on: 2017-10-07 00:37:03.116684
+    -- Generator Version: 1.0
+    --
+    -- Template Version:  1.0
+    -- Version 1.0  Initial version of the template for the XPath Stored Procedures
+    -- ========================================================================================*/
+
+    CREATE PROCEDURE [Warehouse].[StockItemTransactions_XPath]
+    AS
+    BEGIN --Procedure
+        DECLARE @ReceivedMessages TABLE
+        (
+            Payload XML
+        )
+        DECLARE @Messages TABLE
+        (
+            [StockItemTransactionID] int,
+            [StockItemID] int,
+            [TransactionTypeID] int,
+            [CustomerID] int,
+            [InvoiceID] int,
+            [SupplierID] int,
+            [PurchaseOrderID] int,
+            [TransactionOccurredWhen] datetime2(7),
+            [Quantity] decimal(18, 3)
+        )
+
+        DELETE FROM @Messages
+
+        INSERT @Messages
+        (
+            [StockItemTransactionID],
+            [StockItemID],
+            [TransactionTypeID],
+            [CustomerID],
+            [InvoiceID],
+            [SupplierID],
+            [PurchaseOrderID],
+            [TransactionOccurredWhen],
+            [Quantity]
+        )
+        SELECT
+            [StockItemTransactionID] = [b].[value]('payload[1]/record[1]/StockItemTransactionID', 'int'),
+            [StockItemID] = [b].[value]('payload[1]/record[1]/StockItemID', 'int'),
+            [TransactionTypeID] = [b].[value]('payload[1]/record[1]/TransactionTypeID', 'int'),
+            [CustomerID] = [b].[value]('payload[1]/record[1]/CustomerID', 'int'),
+            [InvoiceID] = [b].[value]('payload[1]/record[1]/InvoiceID', 'int'),
+            [SupplierID] = [b].[value]('payload[1]/record[1]/SupplierID', 'int'),
+            [PurchaseOrderID] = [b].[value]('payload[1]/record[1]/PurchaseOrderID', 'int'),
+            [TransactionOccurredWhen] = [b].[value]('payload[1]/record[1]/TransactionOccurredWhen', 'datetime2(7)'),
+            [Quantity] = [b].[value]('payload[1]/record[1]/Quantity', 'decimal(18, 3)')
+        FROM    @ReceivedMessages [A]
+        CROSS APPLY [payload].[nodes]('//message/dataInput') AS [hdr] ( [b] );
+
+    END --Procedure
+

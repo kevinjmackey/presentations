@@ -1,0 +1,33 @@
+#!  Template to create the Tables for the WorldWide Importers database
+USE [WideWorldImporters];  
+GO
+
+CREATE TABLE [@!table.schema!@].[@!table.name!@]
+(
+<!--(for i,column in column_list)-->
+    <!(if column.name.upper().startswith("AS")-->
+        @!column.name!@ @!column.datatype.lower()!@
+    <!--(else)-->
+    @!column.name!@
+    <--(end)-->
+    <!--(if column.datatype.lower().find("varchar") > 0)-->
+        @!column.datatype.lower()!@(@!column.maximumlength!@)
+    <!--(elif column.datatype.lower()=="decimal")-->
+        @!column.datatype.lower()!@(@!column.decimalprecision!@, @!column.decimalscale!@)
+    <!--(elif column.datatype.lower()=="numeric")-->
+        @!column.datatype.lower()!@(@!column.decimalprecision!@, @!column.decimalscale!@)
+    <--(elif column.datatype.lower()=="datetime2")-->
+        @!column.datatype.lower()!@(7)
+    <!--(else)-->
+        @!column.datatype.lower()!@
+    <!--(end)-->
+    <!--(if column.isnullable=="Y")-->
+        NULL
+    <!--(else)-->
+        NOT NULL
+<!--(end)-->
+)
+
+EXEC sys.sp_addextendedproperty @name = N'Description', @value = N'@!table.desc!@,
+	@level0type = N'SCHEMA', @level0name = '@!table.schema!@,
+	@level1type = N'TABLE',  @level1name = '@!table.name!@;

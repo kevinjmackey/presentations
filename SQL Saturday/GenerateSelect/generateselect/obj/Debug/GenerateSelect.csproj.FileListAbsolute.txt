@@ -1,0 +1,17 @@
+C:\Projects\Presentations\SQL Saturday\GenerateSelect\GenerateSelect\bin\Debug\GenerateSelect.exe.config
+C:\Projects\Presentations\SQL Saturday\GenerateSelect\GenerateSelect\bin\Debug\GenerateSelect.exe
+C:\Projects\Presentations\SQL Saturday\GenerateSelect\GenerateSelect\bin\Debug\GenerateSelect.pdb
+C:\Projects\Presentations\SQL Saturday\GenerateSelect\GenerateSelect\obj\Debug\GenerateSelect.csprojResolveAssemblyReference.cache
+C:\Projects\Presentations\SQL Saturday\GenerateSelect\GenerateSelect\obj\Debug\GenerateSelect.csproj.CoreCompileInputs.cache
+C:\Projects\Presentations\SQL Saturday\GenerateSelect\GenerateSelect\obj\Debug\GenerateSelect.exe
+C:\Projects\Presentations\SQL Saturday\GenerateSelect\GenerateSelect\obj\Debug\GenerateSelect.pdb
+C:\Users\uyr85ff\Downloads\GenerateSelect\GenerateSelect\bin\Debug\GenerateSelect.exe.config
+C:\Users\uyr85ff\Downloads\GenerateSelect\GenerateSelect\obj\Debug\GenerateSelect.exe
+C:\Users\uyr85ff\Downloads\GenerateSelect\GenerateSelect\obj\Debug\GenerateSelect.pdb
+C:\Users\uyr85ff\Downloads\GenerateSelect\GenerateSelect\bin\Debug\GenerateSelect.exe
+C:\Users\uyr85ff\Downloads\GenerateSelect\GenerateSelect\bin\Debug\GenerateSelect.pdb
+C:\Users\uyr85ff\Downloads\GenerateSelect\GenerateSelect\bin\Debug\GenerateSelect.cs
+C:\Users\uyr85ff\Downloads\GenerateSelect\GenerateSelect\bin\Debug\GenerateSelectTemplate.xslt
+C:\Users\uyr85ff\Downloads\GenerateSelect\GenerateSelect\obj\Debug\GenerateSelect.csprojResolveAssemblyReference.cache
+C:\Projects\Presentations\SQL Saturday\GenerateSelect\GenerateSelect\bin\Debug\GenerateSelectTemplate.xslt
+C:\Projects\Presentations\SQL Saturday\GenerateSelect\GenerateSelect\bin\Debug\GenerateSelect.cs

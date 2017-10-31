@@ -1,0 +1,19 @@
+C:\DataView\CobolGenerator\CobolGenerator\bin\Debug\CobolGenerator.exe.config
+C:\DataView\CobolGenerator\CobolGenerator\bin\Debug\CobolGenerator.exe
+C:\DataView\CobolGenerator\CobolGenerator\bin\Debug\CobolGenerator.pdb
+C:\DataView\CobolGenerator\CobolGenerator\obj\Debug\CobolGenerator.csprojResolveAssemblyReference.cache
+C:\DataView\CobolGenerator\CobolGenerator\obj\Debug\CobolGenerator.Form1.resources
+C:\DataView\CobolGenerator\CobolGenerator\obj\Debug\CobolGenerator.Properties.Resources.resources
+C:\DataView\CobolGenerator\CobolGenerator\obj\Debug\CobolGenerator.csproj.GenerateResource.Cache
+C:\DataView\CobolGenerator\CobolGenerator\obj\Debug\CobolGenerator.exe
+C:\DataView\CobolGenerator\CobolGenerator\obj\Debug\CobolGenerator.pdb
+C:\Projects\Presentations\SQL Saturday\CobolGenerator\CobolGenerator\bin\Debug\CobolGenerator.exe.config
+C:\Projects\Presentations\SQL Saturday\CobolGenerator\CobolGenerator\bin\Debug\CobolGenerator.exe
+C:\Projects\Presentations\SQL Saturday\CobolGenerator\CobolGenerator\bin\Debug\CobolGenerator.pdb
+C:\Projects\Presentations\SQL Saturday\CobolGenerator\CobolGenerator\obj\Debug\CobolGenerator.csprojResolveAssemblyReference.cache
+C:\Projects\Presentations\SQL Saturday\CobolGenerator\CobolGenerator\obj\Debug\CobolGenerator.Properties.Resources.resources
+C:\Projects\Presentations\SQL Saturday\CobolGenerator\CobolGenerator\obj\Debug\CobolGenerator.csproj.GenerateResource.Cache
+C:\Projects\Presentations\SQL Saturday\CobolGenerator\CobolGenerator\obj\Debug\CobolGenerator.csproj.CoreCompileInputs.cache
+C:\Projects\Presentations\SQL Saturday\CobolGenerator\CobolGenerator\obj\Debug\CobolGenerator.exe
+C:\Projects\Presentations\SQL Saturday\CobolGenerator\CobolGenerator\obj\Debug\CobolGenerator.pdb
+C:\Projects\Presentations\SQL Saturday\CobolGenerator\CobolGenerator\obj\Debug\CobolGenerator.MyFormControl.resources

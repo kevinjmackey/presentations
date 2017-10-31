@@ -1,0 +1,18 @@
+#!  Template to create the Schemas/Sequences for the WorldWide Importers database
+USE [WideWorldImporters];  
+GO
+
+<!--(for i, schema in enumerate(schema_list)-->
+    CREATE SCHEMA [@!schema.name!@] AUTHORIZATION dbo;
+    GO
+    EXEC sys.sp_addextendedproperty @name = N'Description', 
+        @value = N'@!schema.desc@!',
+        @level0type = N'SCHEMA', @level0name = '@!schema.name!@;
+    GO
+<!--(end)-->
+
+<!--(for i, sequence in enumerate(sequence_list)-->
+    CREATE SEQUENCE [Sequences].[@!sequence.name!@] AS @!sequence.datatype.lower()!@
+            START WITH 1;
+    GO
+<!--(end)-->
